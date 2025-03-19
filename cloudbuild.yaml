@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/iconic-apricot-454212-p1/mld', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/iconic-apricot-454212-p1/mld']
